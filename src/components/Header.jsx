@@ -11,3 +11,13 @@
   // check that your links work!
 
 import React from 'react';
+
+
+const Header = () => {
+  return (
+    <p>Nyi</p>
+  )
+
+}
+
+export default Header;
