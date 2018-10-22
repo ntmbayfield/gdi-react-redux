@@ -20,15 +20,26 @@
     // Then pass in that function as props to ImageUploaderForm
     // and when the user submits, call that function with the user submitted url.
 
-import React from 'react';
-import data from '../../data.json';
+
+import React, { Component } from 'react';
+import Data from '../../data.json';
 import ImageUploaderForm from '../components/ImageUploaderForm.jsx';
 import FeedList from '../components/FeedList.jsx';
 
-const HomePage = () => {
-	<div className="homepage">
-		<p>Nyi</p>
-	</div>
+
+
+class HomePage extends Component {
+	render () {
+		const { photos } = Data;
+		console.log(photos);
+
+		return (
+			<div className="HomePage">
+				<ImageUploaderForm />
+				<FeedList photos={photos} />
+			</div>
+		)
+	}
 }
 
 export default HomePage;

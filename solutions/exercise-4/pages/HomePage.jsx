@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import data from '../../../data.json';
+import Data from '../../../data.json';
 import ImageUploaderForm from '../components/ImageUploaderForm.jsx';
 import FeedList from '../components/FeedList';
 
 class HomePage extends Component {
 	render() {
-		const { photos } = data;
+		const { photos } = Data;
 		return (
 			<div className="HomePage">
 				<ImageUploaderForm />

@@ -7,7 +7,7 @@ const FeedItem = (props) => {
   return (
     <div className="FeedItem">
       <img className="Image" src={url} />
-      <Likes totalLikes={likes} />
+      <Likes />
     </div>
   );
 };

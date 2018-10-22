@@ -1,11 +1,13 @@
 import React from 'react';
 
 const Likes = (props) => {
-	const { totalLikes } = props;
+	const {  } = props;
 	return (
-		<div className="Likes">
-			<span>{ totalLikes } likes</span>
-			<button className="LikesButton">
+		<div className="likes">
+			<span>
+				<p></p>
+			</span>
+		<button className="likes-button">
 				Like
 			</button>
 		</div>

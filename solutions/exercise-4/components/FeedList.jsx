@@ -3,6 +3,8 @@ import FeedItem from './FeedItem.jsx';
 
 const FeedList = (props) => {
   const { photos } = props;
+  console.log("this is photos from FeedList: ", photos);
+  
   return (
     <div className="FeedList">
       {
